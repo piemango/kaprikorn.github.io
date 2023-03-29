@@ -1,0 +1,153 @@
+@font-face{
+    font-family: Amatic;
+    src: url(../open/font/AmaticSC-Bold.ttf);
+}
+
+@font-face{
+    font-family: Josefin ;
+    src: url(../open/font/static/JosefinSans-SemiBold.ttf);
+}
+
+@font-face{
+    font-family: Athiti;
+    src: url(../open/font/Athiti/Athiti-Regular.ttf);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+::-webkit-scrollbar{
+    display: none;
+}
+
+
+
+/**********join********/
+
+.join-1{
+    cursor: url("heartcur.png"), auto;
+    display: flex;
+    position: fixed;
+    height:100%;
+    width: 100%;
+    margin: 0;
+    padding: 5rem;
+    background: #eee;
+    background-size: cover;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+}
+
+.join-cont{
+    display: grid;
+    position: relative;
+    background-color: #DBD9D9;
+    padding: 2.3rem 2.3rem;
+    margin: 1rem;
+    border-radius: 6rem;
+    border: 0.07rem solid black;
+    justify-content: center;
+    align-items: center;
+}
+
+.contrainner{
+    position: relative;
+    width: 13rem; height: 13rem;
+    margin-top: 0.5rem;
+    margin-bottom: 1.5rem;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    left: 15%;
+    border-radius: 16rem;
+    background-image: linear-gradient(45deg,#4F9EED, #F8AAAA);
+}
+
+
+.profile1{
+    width: 12rem; height: 12rem;
+    position: relative;
+    left: 0.02rem;
+
+    top: 0;
+    margin: 0.5rem;
+    padding: 1.2rem;
+    box-sizing: border-box;  
+}
+
+.name{
+    padding: 1rem 3rem;
+    border-radius: 2rem;
+    background-color: #EAE7E7;  
+    border: 0.063rem solid #eee;
+    font-size: 1.25rem;
+    font-family: Amatic, Athiti;
+}
+
+.name:focus{
+    outline: none;
+    box-shadow: 0rem 0rem 0.938rem 0rem #4F9EED;
+    background-image: linear-gradient(45deg,#4F9EED, #F8AAAA);
+}
+
+form{
+    display: flex;
+    position: relative;
+    flex-direction: row;
+    align-items: center;
+    margin: 0.3rem ;
+    margin-bottom: 0.3rem;
+    bottom:1% ;
+    box-sizing: border-box;
+}
+
+.go{
+    padding: 0.625rem 0.938rem;
+    height: auto;
+    max-width: 100%;
+    border-radius: 6rem; 
+    background-color: #EAE7E7;
+    font-size: 1.3rem;
+    border: 0.06rem solid black;
+    font-family: Amatic;
+    margin-left: 1.3rem;
+    cursor: url("pointcur.png"), auto;
+}
+
+.go:focus{
+    background-image: linear-gradient(45deg,#4F9EED, #F8AAAA); 
+}
+
+.close{
+    height:2.5rem; width: 2.5rem;
+    border-radius: 5.6rem;
+    background: #DBD9D9;
+    position: absolute;
+    top: 2.5rem;
+    right: 2.8rem;
+}
+.close img{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    cursor: url("pointcur.png"), auto;
+}
+
+.close img:hover{
+    transform: scale(0.8);
+    box-shadow: 0rem 0rem 0.625rem 0rem #4F9EED;
+    background-image: linear-gradient(45deg,#4F9EED, #F8AAAA);
+    border-radius: 6.25rem;
+}
+
+img .profile1{
+    object-fit: cover;
+    width: 100%; height: 100%;
+    position: absolute;
+}
+

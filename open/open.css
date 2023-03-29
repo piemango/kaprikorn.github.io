@@ -1,0 +1,294 @@
+@font-face{
+    font-family: Amatic;
+    src: url(../open/font/AmaticSC-Bold.ttf);
+}
+
+@font-face{
+    font-family: Josefin ;
+    src: url(../open/font/static/JosefinSans-SemiBold.ttf);
+}
+
+@font-face{
+    font-family: Athiti;
+    src: url(../open/font/Athiti/Athiti-Regular.ttf);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+::-webkit-scrollbar{
+    display: none;
+}
+
+section{
+    padding: 4.375rem 17%;
+    margin: 0, auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.open{
+    width: 100%;
+    min-height: 100vh;
+}
+
+/***********background**********/
+body{
+    width: 100%;
+    height: auto;
+    background-image: url('page 1.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+
+/****************content********************/
+
+.door{
+    padding: 0.313rem 10%;
+    position: relative;
+    text-align: center;
+}
+
+.door .tooltip{
+    display: none;
+}
+
+.door:hover #tooltip-1{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 0.313rem;
+    right: 1.25rem;
+    transition: 2s;
+}
+
+.door:hover #tooltip-2{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    bottom: 3.125rem;
+    left: 1.25rem;
+    transition: 5s;
+}
+
+.out-door img{
+    width: auto;
+    height: auto;
+    cursor: url("kcockcur.png"), auto;
+}
+
+.out-door img:hover{
+    transform: rotate(-10deg);
+    margin-bottom: 0.625rem;
+}
+
+/**********enter button**********/
+
+.btn{
+    display: inline-block;
+    font-family: Josefin ;
+    font-size: 2.5rem;
+    padding: 0.625rem 1.25rem;
+    margin-top: 3.125rem;
+    background-color: #2784E1 ;
+    color: black ;
+    border: none;
+    border-radius: 1.875rem;
+    cursor: url("pointcur.png"), auto;
+}
+.btn:hover{
+    transform: scale(0.8);
+    transition: 0.5s ease;
+    transition-delay: 0.3s;
+    background-color: white ;
+    color: #2784E1;
+    box-shadow: 0rem 0rem 0.938rem 0rem white;
+    
+}
+
+/*********tooltip***********/
+.tooltip{
+    font-family: Amatic;
+    font-size: 6.25rem;
+    color: black;
+    text-shadow: 0rem 0rem 0.938rem yellow;
+}
+
+#tooltip-1 p{
+    transform: rotate(-30deg);
+    
+}
+
+#tooltip-2 p{
+    transform: rotate(10deg);
+}
+
+/**************responsive**********/
+
+@media screen and (width: 360px){
+
+    .out-door img{
+        width: 99%;
+        height: 99%
+    }
+
+    .btn{
+        font-size: 2rem;
+        margin-top: 2.5rem;
+    }
+}
+
+@media screen and (height: 360px){
+
+    .out-door img{
+        width: 50%;
+        height: 50%
+    }
+
+    .btn{
+        font-size: 1.5rem;
+        margin-top: 1.8rem;
+    }
+
+    .open{
+        position: fixed;
+    }
+
+    section{
+        padding: 1rem 17%;    
+    }
+
+}
+
+@media screen and (width: 320px){
+
+    .out-door img{
+        position: relative;
+        right: 0.6rem;
+        
+        width: 110%;
+        height: 110;
+    }
+
+    .door{
+        padding: 0.2rem 10%;
+        position: relative;
+        text-align: center;
+    }
+
+    .btn{
+        font-size: 2rem;
+        margin-top: 1.9rem;
+    }
+
+}
+
+@media screen and (height: 320px){
+
+    .out-door img{
+        width: 40%;
+        height: 40%;
+    }
+
+    .open{
+        position: fixed;
+    }
+
+    .btn{
+        font-size: 1.1rem;
+        margin-top: 1.4rem;
+    }
+
+    section{
+        padding: 0.5rem 17%;    
+    }
+
+
+}
+
+@media screen and (height: 1138px){
+
+    .out-door img{
+        width: 5rem;
+        height: 6rem;
+        margin: 0;
+    }
+
+    .btn{
+        font-size: 20rem;
+        margin-top: 1.8rem;
+    }
+}
+
+@media (height: 390px){
+
+    .open{
+        position: fixed;
+        padding: 0;
+    }
+
+    .door .out-door img{
+        width: 50%;
+        height: 50%;
+    }
+
+    .btn{
+        font-size: 1.6rem;
+        margin-top: 1.8rem;
+    }
+
+}
+
+@media (width: 390px) and (height: 844px){
+
+    .door .out-door img{
+        width: 30%;
+        height: 30%;
+    }
+
+    .btn{
+        font-size: 2rem;
+        margin-top: 1.8rem;
+    }
+
+}
+@media (max-width: 280px){
+    .door .out-door img{
+        width:100%;
+        height:100%;
+    }
+
+    .btn{
+        font-size: 1.6rem;
+        margin-top: 1.5rem;
+    }
+
+}
+
+@media (width: 1024px){
+
+    .door .out-door img{
+        width:150%;
+        height:150%;
+        position: relative;
+        left: ;
+    }
+
+    .btn{
+        font-size: 2rem;
+        margin-top: 1.5rem;
+    }
+}
+
+
+
+    
+

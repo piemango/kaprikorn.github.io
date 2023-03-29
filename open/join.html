@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="eng">
+    <head>
+        <title> KAPRIKORN </title>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="join.css">
+        <link rel="icon" type="x-icon" href="door.png">
+    </head>
+    <body>
+        <section class="join-1">
+            
+                <div class="join-cont">
+                     <div class="contrainner">
+                        <div class="profile">
+                            <img class="profile1" id="profile1">
+                        </div>
+                     </div>
+                     <div class="from">
+                        <form id="form" name="formjoin">
+                            <div>
+                                <input id="nameJoiner" class="name" type="text" name="joiner" placeholder="Who's there" required>
+                                <p class="error join-error"></p>
+
+                            </div>
+                                                       
+                            <button id="go" class="go" type="submit">Go</button>
+                        </form>
+                        
+                     </div>
+                    <div class="close" id="close" onclick="closeJoin()"><img src="close.png"></div>
+            
+        </section>
+    
+        <script>
+            let images=["rabbit.png", "fox.png", "butfiles.png"];
+            let imagesLength = images.length;
+            let randomNumber = Math.random(1);
+            randomNumber = randomNumber*imagesLength;
+            randomNumber = Math.floor(randomNumber);
+            let choosenImage = images[randomNumber];
+            profile1.src = choosenImage;
+        </script>
+
+        <script src="kaprikorn.js"> </script>
+        
+        <script>
+            const form = document.getElementById('form')
+            const nameJoiner = document.getElementById('nameJoiner');
+
+            form.addEventListener('submit', function(n){
+
+
+                n.preventDefault();
+
+                const nameJoinerValue = nameJoiner.value;
+
+                localStorage.setItem('nameLogo', nameJoinerValue);
+    
+                window.location.assign("homepage.html");
+            })
+        </script>
+        <script>
+
+            function closeJoin(){
+                window.location.assign("open.html");
+            }
+        </script>
+
+    </body>
+
+</html>

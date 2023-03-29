@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="eng">
+    <head>
+        <title> KAPRIKORN </title>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="open.css">
+        <link rel="icon" type="x-icon" href="door.png">
+    </head>
+    <body>
+        <section class="open">
+          <div class="door">
+            <div class="out-door">
+                <img src="door.png" >
+            </div>
+            <div class="tooltip" id="tooltip-1">
+                <p>Knock</p>
+            </div>
+            <div class="tooltip" id="tooltip-2">
+                <p>Knock</p>
+            </div>
+          </div>
+          <button class="btn" id="btn" onclick="openJoin()">Enter</button>
+        </section>
+        <script>
+            function openJoin(){
+            window.location.assign("join.html");
+        }
+        </script>
+        <audio src="../open/song.mp3" style="display:none;" autoplay loop>
+    </body>
+
+</html>

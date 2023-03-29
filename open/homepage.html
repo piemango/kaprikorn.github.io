@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="eng">
+
+<head>
+    <title> KAPRIKORN </title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="homepage.css">
+    <link rel="icon" type="x-icon" href="door.png">
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css'>
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+</head>
+
+<body>
+    <header>
+        
+        <div class="logo"><p class="word">Welcome</p><span id="nameLogo"></span></div>
+    
+        <div class="bx bx-menu" id="menu-icon"></div>
+        <ul class="menu">
+            <li class="icon"><a href="open.html" ><i class="fi fi-rr-door-closed">
+                <p class="word-up" id="word-1">exist</p>
+            </i></a></li>
+            <li class="icon"><a href="homepage.html"><i class="fi fi-rr-home">
+                <div class="active"></div>
+                <p class="word-up" id="word-2">home</p>
+            </i></a></li>
+            <li class="icon"><a href="animation.html" ><i class="fi fi-rr-play-alt">
+                <p class="word-up" id="word-3">animation</p>
+            </i></a></li>
+            <li><a href="contact.html"><div class="proflie">
+                <img src="../open/user.png">
+                <p class="word-up" id="word-4">contact</p>
+            </div></a></li>
+        </ul>
+    </header>
+    
+    <section class="home" id="home">
+        <p class="head">Our friends</p>
+        <div class="contrainer">
+            <a href="butterfly.html"><div class="friend" name="butterfly" id="f-1">
+                <img src="butfiles.png" alt="">
+                <h2>Butterfly (ผีเสื้อ)</h2>
+            
+            </div></a>
+            <a href="fox.html"><div class="friend" name="fox" id="f-1">
+                <img src="fox.png" alt="">
+                <h2>Fox (สุนัขจิ้งจอก)</h2>
+            </div></a>
+            <a href="rabbit.html"><div class="friend" name="rabbit" id="f-1">
+                <img src="rabbit.png" alt="">
+                <h2>Rabbit (กระต่าย)</h2>
+            </div></a>
+
+        </div>
+    
+    </section>
+
+
+    <script> 
+        const nameJoiner = localStorage.getItem('nameLogo');
+        document.getElementById('nameLogo').textContent = nameJoiner;
+
+    </script>
+    
+    <script>
+
+        let menu_icon = document.querySelector('#menu-icon')
+        let menu = document.querySelector(".menu")
+        
+        menu_icon.onclick = () => {
+            menu.classList.toggle('bx-menu');
+            menu.classList.toggle('open');
+
+        }
+        
+
+    
+    </script>
+    
+
+</body>
+
+</html>

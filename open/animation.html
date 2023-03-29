@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="eng">
+
+<head>
+    <title> KAPRIKORN </title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="homepage.css">
+    <link rel="stylesheet" href="animation.css">
+    <link rel="icon" type="x-icon" href="door.png">
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css'>
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+</head>
+
+<body>
+    <header>
+        
+        <div class="logo"><p class="word">Welcome</p><span id="nameLogo"></span></div>
+    
+        <div class="bx bx-menu" id="menu-icon"></div>
+        <ul class="menu">
+            <li class="icon"><a href="open.html" ><i class="fi fi-rr-door-closed">
+                <p class="word-up" id="word-1">exist</p>
+            </i></a></li>
+            <li class="icon"><a href="homepage.html"><i class="fi fi-rr-home">
+                <p class="word-up" id="word-2">home</p>
+            </i></a></li>
+            <li class="icon"><a href="animation.html" ><i class="fi fi-rr-play-alt">
+                <p class="word-up" id="word-3">animation</p>
+                <div class="active"></div>
+            </i></a></li>
+            <li><a href="contact.html"><div class="proflie">
+                <img src="../open/user.png">
+                <p class="word-up" id="word-4">contact</p>
+            </div></a></li>
+        </ul>
+    </header>
+
+    <section class="animation" id="animation">
+        <div class="cont-video">
+            <div class="video-animals" id="animals-1">
+                <video id="animal-vdo" src="butterfly.mp4" muted controls></video>
+                <div class="word-anim">
+                    <div class="name-anim"><p>Butterfly (ผีเสื้อ)</p></div>
+                    <div class="info-anim"><h3>ผีเสื้อเป็นสัตว์จำพวกแมลง มีวงจรชีวิตเริ่มจากระยะไข่ ระยะหนอน <br>ระยะดักแด้และระยะโตเต็มไวเป็นที่เราคุ้นตากันดี</h3></div>
+                    <h4>เครดิต :<br>
+                        <a href="https://youtu.be/lboUNlnKIlY">เพลง</a>
+                        <a href="https://web.ku.ac.th/schoolnet/snet4/july8/butrfy.htm">ข้อมูล</a>                     
+                    </h4>
+                </div>
+
+            
+            </div>
+            <div class="video-animals" id="animals-2">
+                <video id="animal-vdo" src="fox.mp4" muted controls></video>
+                <div class="word-anim">
+                    <div class="name-anim"><p>Fox (สุนัขจิ้งจอก)</p></div>
+                    <div class="info-anim"><h3>จิ้งจอกแดงเป็นสัตว์จำพวกสุนัข มีหูแหลมและปากกระบอกยาว <br>มีขนที่สวยงามและมีหางเป็นปุยยาวเสมือนเป็นผ้าห่มในขณะพักผ่อน</h3></div>
+                    <h4>เครดิต :<br>
+                        <a href="https://youtu.be/qDfc6lxkip0">เพลง</a>
+                        <a href="https://vk-spy.ru/th/laws-and-safety/lisa-osobennosti-stroeniya-mesta-obitaniya-obraz-zhizni-lisa/?fbclid=IwAR0vv1hKYXe4Aw9zSMvrvKIEibYR-7OBnHtssJax7L1QXWon9tPDYq38KkE">ข้อมูล</a>                     
+                    </h4>
+
+                </div>        
+            </div>
+            <div class="video-animals" id="animals-1">
+                <video id="animal-vdo" src="rabbit.mp4" muted controls></video>
+                <div class="word-anim">
+                    <div class="name-anim"><p>Rabbit (กระต่าย)</p></div>
+                    <div class="info-anim"><h3>Dwarf Hotot สายพันธุ์กระต่ายบ้านที่มีขนสีขาวทั้งตัวยกเว้น<br>วงกลมที่มีสีอื่นรอบดวงตาแต่ละข้าง </h3></div>
+                    <h4>เครดิต :<br>
+                        <a href="https://youtu.be/eG_bYp9gV6A">เพลง</a>
+                        <a href="https://hmong.in.th/wiki/Dwarf_Hotot?fbclid=IwAR2MSyy5S8MNy60CQLDu7MLPF2x3AyQ65DjnHv16OzlnA2KSX0of8BtfNjk">ข้อมูล</a>                     
+                    </h4>
+
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+
+    <script> 
+        const nameJoiner = localStorage.getItem('nameLogo');
+        document.getElementById('nameLogo').textContent = nameJoiner;
+
+    </script>
+    
+    <script>
+
+        let menu_icon = document.querySelector('#menu-icon')
+        let menu = document.querySelector(".menu")
+        
+        menu_icon.onclick = () => {
+            menu.classList.toggle('bx-menu');
+            menu.classList.toggle('open');
+
+        }
+        
+
+    
+    </script>
+    
+    
+    
+
+</body>
+
+</html>

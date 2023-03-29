@@ -1,0 +1,130 @@
+@font-face{
+    font-family: Amatic;
+    src: url(../open/font/AmaticSC-Bold.ttf);
+}
+
+@font-face{
+    font-family: Josefin ;
+    src: url(../open/font/static/JosefinSans-SemiBold.ttf);
+}
+
+@font-face{
+    font-family: Athiti;
+    src: url(../open/font/Athiti/Athiti-Regular.ttf);
+}
+
+@font-face{
+    font-family: Trirong;
+    src: url(../open/font/Trirong/Trirong-ExtraLight.ttf);
+}
+
+@font-face{
+    font-family: Trirong-eng;
+    src: url(../open/font/trirong-eng/Trirong-Regular.ttf);
+}
+
+@font-face{
+    font-family: PT-sans;
+    src: url(../open/font/sans/PTSansNarrow-Regular.ttf);
+}
+
+@font-face{
+    font-family: Prompt;
+    src: url(../open/font/Prompt/Prompt-Medium.ttf);
+}
+
+section{
+    display: flex;
+    position: relative;
+    padding: 2rem;
+    margin: 0;
+    width: 100%;
+    cursor: url('pencil.png'),auto;
+}
+
+.animation{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    margin-top: 7rem;
+    margin-left: 0; 
+    margin-right: 0;
+    padding: 2rem;
+    box-sizing: border-box;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.message{
+    display: flex;
+    position: relative;
+    margin-bottom: 2.3rem;
+    font-family: Prompt;
+    font-size: 5rem;
+    color:#DBD9D9;
+    box-sizing: border-box;
+    text-shadow: 0 0 0.5rem black;
+}
+
+.form_overlay{
+    display: grid;
+    position: relative;
+}
+
+textarea{
+    position: relative;
+    background: #DBD9D9;
+    font-size: 1.5rem;
+    padding: 2rem;
+    resize: none;
+    border-radius: 3rem;
+    font-family: Prompt,Josefin ;
+    box-sizing: border-box;
+    border: none;
+    color: #343328;
+}
+
+textarea:focus{
+    background-color: #FBF3B0;
+    box-shadow: 0 0 5px 0 #343328;
+    border: none;
+    outline: unset;
+}
+
+.send{
+    display: flex;
+    position: relative;
+    margin-top: 2rem;
+    padding-left: 1rem;
+    padding-right: 1rem;  
+    align-items: center;
+    justify-content: center; 
+}
+
+#submit{
+    font-size: 1.5rem;
+    border-radius: 2rem;
+    background-color: #DBD9D9 ;
+    padding: 1rem;
+    box-sizing: border-box;
+    font-family: Amatic;
+    border: none;
+    color: #343328;
+}
+
+#submit:hover{
+    border: none;
+    background-color: #FBF3B0;
+    transform: scale(0.8);
+    transition: 2s ease-out;
+    box-shadow: 0 0 20px 0 #343328;
+}
+
+.active1{
+    display: flex;
+    width: 2.8rem; height: 5px;
+    background-color: #4F9EED;
+    position: absolute;
+    top: 3rem;
+}

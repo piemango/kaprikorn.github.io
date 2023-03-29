@@ -1,0 +1,176 @@
+@font-face{
+    font-family: Amatic;
+    src: url(../open/font/AmaticSC-Bold.ttf);
+}
+
+@font-face{
+    font-family: Josefin ;
+    src: url(../open/font/static/JosefinSans-SemiBold.ttf);
+}
+
+@font-face{
+    font-family: Athiti;
+    src: url(../open/font/Athiti/Athiti-Regular.ttf);
+}
+
+@font-face{
+    font-family: Trirong;
+    src: url(../open/font/Trirong/Trirong-ExtraLight.ttf);
+}
+
+@font-face{
+    font-family: Trirong-eng;
+    src: url(../open/font/trirong-eng/Trirong-Regular.ttf);
+}
+
+@font-face{
+    font-family: PT-sans;
+    src: url(../open/font/sans/PTSansNarrow-Regular.ttf);
+}
+
+@font-face{
+    font-family: Prompt;
+    src: url(../open/font/Prompt/Prompt-Medium.ttf);
+}
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    position: flex;
+    padding: 3rem;
+    height: 100%;
+    width: 100%;
+    background-image: linear-gradient(45deg,#4F9EED, #F8AAAA); 
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    box-sizing: border-box;
+    justify-content: center;
+    cursor: url("butcur.png"), auto;
+}
+
+::-webkit-scrollbar{
+    display: none;
+}  
+
+/************butterfly**********/
+
+.detail {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    justify-content: center;
+    align-content: center;
+    padding-left: 12rem;
+    padding-right: 12rem;
+    padding-top: 3rem;
+    padding-bottom: 2rem;
+    margin-top: 2rem;
+    margin-left: 4rem;
+    margin-right: 4rem;
+    background: #DBD9D9;
+    border-radius: 3rem;
+    box-sizing: border-box;
+    justify-content: center;
+    align-items: center;
+    cursor: url("butcur.png"), auto;
+}
+
+/**********video*********/
+.img-anim{
+    width: 640px; height: 360px;
+    position: relative;
+    display: flex;
+    box-sizing: border-box;
+    margin-top: 1rem;
+    margin-bottom: 3rem;
+    left: 12%;   
+}
+
+.img-anim video{
+    object-fit: cover;
+}
+
+/************* knowlaged********/
+.img-info{
+    display: grid;
+    grid-template: row;
+    grid-gap: 0.5rem;
+    border: 0.2rem solid #343328;
+    position: relative;
+    border-radius: 2rem;
+    box-sizing: border-box;
+    justify-content: center;
+    padding-top: 1rem ;
+    padding-bottom: 2rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    
+}
+
+.img-info:hover{
+    background-color: #4F9EED;
+    transform: scale(0.8);
+    transition: 2s ease-out;
+    border: none;
+    box-shadow: 0 0 10px 0 #343328;
+}
+
+.img-info h2{
+    display: flex;
+    color: #343328;
+    font-family: Trirong;
+    font-size: 1.6rem;
+}
+
+a{
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-family: Prompt;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    justify-content: center;
+    color: #97255B;
+
+}
+
+a:hover{
+    background-color: #F8AAAA;
+    border-radius: 3rem;
+    transform: scale(0.5);
+    transition: 2s ease;
+    color: #343328;
+
+}
+
+.link{
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    grid-gap: 4rem;
+    margin-top: 2rem;
+    align-items: center;
+    margin-bottom: 1rem;
+    padding-left:2rem;
+    padding-right:2rem;
+    left: 30%;
+    border-radius: 1rem;
+    border: 0.05 solid black;
+}
+
+
+p{
+    position: relative;
+    left:  27%;
+    font-size: 3rem;
+    padding: 1rem;
+    color: #97255B;
+    font-family: Prompt, Josefin;
+
+}

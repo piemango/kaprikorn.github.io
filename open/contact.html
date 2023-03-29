@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="eng">
+
+<head>
+    <title> KAPRIKORN </title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="homepage.css">
+    <link rel="stylesheet" href="contact.css">
+    <link rel="icon" type="x-icon" href="door.png">
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css'>
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+</head>
+
+<body>
+    <header>
+        
+        <div class="logo"><p class="word">Welcome</p><span id="nameLogo"></span></div>
+    
+        <div class="bx bx-menu" id="menu-icon"></div>
+        <ul class="menu">
+            <li class="icon"><a href="open.html" ><i class="fi fi-rr-door-closed">
+                <p class="word-up" id="word-1">exist</p>
+            </i></a></li>
+            <li class="icon"><a href="homepage.html"><i class="fi fi-rr-home">
+                <p class="word-up" id="word-2">home</p>
+            </i></a></li>
+            <li class="icon"><a href="animation.html" ><i class="fi fi-rr-play-alt">
+                <p class="word-up" id="word-3">animation</p>
+            </i></a></li>
+            <li><a href="contact.html"><div class="proflie">
+                <div class="active1"></div>
+                <img src="../open/user.png">
+                <p class="word-up" id="word-4">contact</p>
+            </div></a></li>
+        </ul>
+    </header>
+
+    <section class="animation" id="animation">
+
+        <p class="message">Messages to Our Friends</p>
+            
+        <form class="form_overlay" method="POST" accept-charset="UTF-8" autocomplete="off" name="contact"> 
+                    
+            <div class="col-12">
+                <div class="advice-me-plz">
+                    <label for="desc" class="lable"></label>
+                    <textarea name="message" cols="20" rows="5" class="form-control" required autocomplete="off" placeholder="เราอยากอ่านข้อความจากคุณ"></textarea>
+                </div>
+            </div>
+                     
+            <div class="send">
+                <button type="submit" class="btn-primary mt-3" id="submit">Submit</button>
+            </div>
+        </form>
+    </section>
+
+    <script> 
+        const nameJoiner = localStorage.getItem('nameLogo');
+        document.getElementById('nameLogo').textContent = nameJoiner;
+    </script>
+
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbzWC9ughQJnVPV4GfW9j3xw4MVCx-emFeVn8jN8j4gmnJf9Q6AKHostBTu4GpvaMtPq/exec'
+        const form = document.forms['contact']
+
+        form.addEventListener('submit', e => {
+        e.preventDefault()
+        fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => document.getElementById("demo").innerHTML = "<div class='alert alert-primary' role='alert'><b>Thank You for providing the details, We shall get back to you shortly !</b></div>",contact.reset())
+                .catch(error => console.error('Error!', error.message))
+            })
+    </script>   
+<script>
+
+    let menu_icon = document.querySelector('#menu-icon')
+    let menu = document.querySelector(".menu")
+    
+    menu_icon.onclick = () => {
+        menu.classList.toggle('bx-menu');
+        menu.classList.toggle('open');
+
+    }
+    
+
+
+</script>
+
+    
+
+</body>
+
+</html>
